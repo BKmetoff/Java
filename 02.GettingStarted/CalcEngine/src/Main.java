@@ -9,18 +9,26 @@ public class Main {
         double[] results = new double[opCodes.length];
 
         for (int i = 0; i < opCodes.length; i++) {
-            switch (opCodes[i]) {
-                case 'a' -> results[i] = leftVals[i] + rightVals[i];
-                case 's' -> results[i] = leftVals[i] - rightVals[i];
-                case 'm' -> results[i] = leftVals[i] * rightVals[i];
-                case 'd' -> results[i] = rightVals[i] != 0 ? leftVals[i] / rightVals[i] : 0.0;
-                default -> {
-                    System.out.println("invalid opt code: " + opCodes[i]);
-                    results[i] = 0.0d;
-                }
-            }
+            results[i] = execute(opCodes[i], leftVals[i], rightVals[i]);
         }
 
         System.out.println(Arrays.toString(results));
+    }
+
+    static double execute(char opCode, double leftVal, double rightVal) {
+        double result;
+
+        switch (opCode) {
+            case 'a' -> result = leftVal + rightVal;
+            case 's' -> result = leftVal - rightVal;
+            case 'm' -> result = leftVal * rightVal;
+            case 'd' -> result = rightVal != 0 ? leftVal / rightVal : 0.0;
+            default -> {
+                System.out.println("invalid opt code: " + opCode);
+                result = 0.0d;
+            }
+        }
+
+        return result;
     }
 }
