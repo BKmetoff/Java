@@ -12,5 +12,7 @@ public class Main {
             equation.execute();
             System.out.println("result = " + equation.getResult());
         }
+
+        System.out.println("Average result = " + MathEquation.getAverageResult());
     }
 }
