@@ -24,6 +24,11 @@ public class Exercise_07 {
         int days = scanner.nextInt();
 
         // write completed code here
+        int hoursInDay = 24;
+        int secondsInHour = 60 * 60;
 
+        long result = days * (hoursInDay * secondsInHour);
+        String output = String.format("%s days have %s seconds.", days, result);
+        System.out.print(output);
     }
 }

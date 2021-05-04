@@ -14,5 +14,15 @@ public class Exercise_06 {
 
         // write code here
 
+        float radius = 3.14f;
+        short height = 5;
+
+        float pi = 3.14f;
+
+        float volume = pi * (radius * radius) * height;
+        double surfaceArea = (2 * pi) * (radius * radius) + (2 * pi) * radius * height;
+
+        String output = String.format("Volume: %.2f, Surface area: %.2f", volume, surfaceArea);
+        System.out.println(output);
     }
 }
