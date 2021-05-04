@@ -11,10 +11,26 @@ class RelationalOperators {
     public static void main(String[] args) {
 
         // example of "less than"
-        int a = 1;
-        int b = 2;
+        int a = 3;
+        int b = 3;
         if (a < b){
             System.out.println("a is less than b");
+        }
+
+        if (a <= b){
+            System.out.println("a is less or equal to b");
+        }
+
+        if (a > b){
+            System.out.println("a is more than b");
+        }
+
+        if (a >= b){
+            System.out.println("a is more or equal to b");
+        }
+
+        if (a == b){
+            System.out.println("a is equal to b");
         }
 
         // write your code below

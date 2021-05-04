@@ -17,7 +17,15 @@ public class Exercise_01 {
     public static void main(String[] args) {
 
         // write code here
+        int integer = 23;
+        double dbl = 3.23d;
+        float flt = 23.43f;
+        char ch = 'd';
 
+        System.out.println(integer);
+        System.out.println(dbl);
+        System.out.println(flt);
+        System.out.println(ch);
     }
 }
 
