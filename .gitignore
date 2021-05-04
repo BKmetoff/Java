@@ -3,4 +3,5 @@ Pluralsight/
 CodingNomads/JavaProgramming/labs/online-java-fundamentals/.idea
 CodingNomads/JavaProgramming/labs/online-java-fundamentals/out/
 CodingNomads/JavaProgramming/labs/online-java-fundamentals/*.iml
-CodingNomads/JavaProgramming/labs/online-java-fundamentals/.gitignore
+CodingNomads/JavaProgramming/labs/online-java-fundamentals/lib/
+
