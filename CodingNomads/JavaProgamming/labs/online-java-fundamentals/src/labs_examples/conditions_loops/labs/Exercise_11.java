@@ -22,5 +22,16 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_11 {
+    public static void main(String[] args) {
+        printTable();
+    }
 
+    private static void printTable() {
+        for (int base = 1; base <= 10; base++) {
+            System.out.println(" ");
+            for (int multiplicator = 1; multiplicator <= 10; multiplicator++) {
+                System.out.print(" |" + base * multiplicator);
+            }
+        }
+    }
 }
