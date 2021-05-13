@@ -9,5 +9,18 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
+    public static void main(String[] args) {
+        String[][] irrArray = {
+                {"bla", "asdf", "sdf"},
+                {"sd"},
+                {"asdf", "sadfasdf", "dsf", "df"}
+        };
 
+        for (String[] array: irrArray) {
+            for (String str : array) {
+                System.out.print(str + " | ");
+            }
+            System.out.println();
+        }
+    }
 }
