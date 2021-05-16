@@ -21,7 +21,7 @@ public class Exercise_03 {
         int rows, columns;
         int start = 3;
         int multiplicator = 1; // haXXX
-        int array[][] = new int[5][5];
+        int[][] array = new int[5][5];
 
         for (rows = 0; rows < 5; rows++) {
             for (columns = 0; columns < 5; columns++) {
