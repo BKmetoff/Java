@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 
 // controller class
-public class Exercise_02 {
+public class Exercise_02_ObjectAssociation {
     public static void main(String[] args) {
 
         Guitar chapman = new Guitar();
@@ -32,6 +32,9 @@ public class Exercise_02 {
         System.out.println(thatsMe.getName() + " has " + thatsMe.getNumberOfGuitars() + " guitars");
         System.out.println("my guitars are " + thatsMe.getGuitars().toString());
 
+        Guitar newGuitar = new Guitar();
+        System.out.println(newGuitar.getBrand() + newGuitar.getNumOfStrings());
+
     }
 }
 
@@ -51,6 +54,12 @@ class Guitarist {
 class Guitar {
     private String brand;
     private int numOfStrings;
+
+    public Guitar(){};
+
+    public Guitar (String brand) {
+        this.brand = brand;
+    }
 
     public String getBrand() {return brand;}
     public int getNumOfStrings() { return numOfStrings; }
