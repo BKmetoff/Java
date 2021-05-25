@@ -14,7 +14,7 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance.Exercise_01
 //        3) Create at least three methods that override a method in one or more parent classes.
 //
 //        4) Create a controller class/method that will create objects of your hiearchy and demonstrate how you use this labs_examples.inheritance
-//        hiearchy. Demonstrate that your subclasses have set the variables in the parent classes, that you have called the parameterized
+//        hierarchy. Demonstrate that your subclasses have set the variables in the parent classes, that you have called the parameterized
 //        super constructors from sub-classes, that you are indeed overriding methods.
 
 
@@ -33,7 +33,7 @@ public class Controller {
         Car superBeachBuggy = new Car("beach buggy", false, 1, "buggy");
 
 
-        // instance of car object + road vehicle object + Vehicle object
+        // instance of car object + road vehicle object + MotorizedVehicle object
         Car bigAssTruck = new Car(
                 "super truck",
                 true,
