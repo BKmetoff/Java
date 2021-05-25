@@ -1,7 +1,7 @@
 package labs_examples.datastructures.stack.labs;
 
 /**
- *      Stacks - Exercise_02
+ *      Stacks - Exercise_02_ObjectAssociation
  *
  *      Write a new custom (Generic) Stack class that uses a traditional Array as the underlying data structure
  *      rather than the LinkedList as in the example we have already seen.

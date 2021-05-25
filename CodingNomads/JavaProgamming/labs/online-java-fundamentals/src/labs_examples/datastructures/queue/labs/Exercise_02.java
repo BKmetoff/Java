@@ -1,7 +1,7 @@
 package labs_examples.datastructures.queue.labs;
 
 /**
- *      Queues - Exercise_02
+ *      Queues - Exercise_02_ObjectAssociation
  *
  *      Write a new custom (Generic) Queue class that uses a traditional Array as the underlying data structure
  *      rather than the LinkedList as in the example we have already seen.

@@ -1,7 +1,7 @@
 package labs_examples.datastructures.hashmap.labs;
 
 /**
- *      HashMaps Exercise_02
+ *      HashMaps Exercise_02_ObjectAssociation
  *
  *      Rewrite the CustomHashMap class to meet the following requirements:
  *      1) no method has the same name as any in CustomHashMap

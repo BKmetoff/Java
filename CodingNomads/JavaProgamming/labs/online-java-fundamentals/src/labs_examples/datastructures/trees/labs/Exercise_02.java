@@ -1,7 +1,7 @@
 package labs_examples.datastructures.trees.labs;
 
 /*
-    Trees: Exercise_02
+    Trees: Exercise_02_ObjectAssociation
 
     For this challenge, please research and implement a custom Trie data structure (https://en.wikipedia.org/wiki/Trie).
 

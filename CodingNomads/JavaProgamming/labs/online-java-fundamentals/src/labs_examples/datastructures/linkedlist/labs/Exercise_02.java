@@ -1,7 +1,7 @@
 package labs_examples.datastructures.linkedlist.labs;
 
 /**
- *      LinkedLists - Exercise_02
+ *      LinkedLists - Exercise_02_ObjectAssociation
  *
  *      Write your own custom LinkedList class. Although it can mimic the CustomLinkedList
  *      class we used here, it must be entirely unique. Please also add at least two
