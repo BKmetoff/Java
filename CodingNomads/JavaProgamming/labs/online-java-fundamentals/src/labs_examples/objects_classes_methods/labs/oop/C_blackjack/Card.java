@@ -19,9 +19,18 @@ public class Card {
         this.cardFace = faces[faceValue];
     }
 
+    public String getCardFace() {
+        return cardFace;
+    }
+
     public void setNumericValue(int numericValue) {
         this.numericValue = numericValue;
     }
+
+    public int getNumericValue() {
+        return this.numericValue;
+    }
+
 
     @Override
     public String toString() {
