@@ -20,7 +20,7 @@ public class BlackjackController {
         Card cardForPlayerHand = deck.addCardToUserHand(randomNumber);
         player.hand.addCardToHand(cardForPlayerHand);
         System.out.println(cardForPlayerHand);
-
+        
     }
 
     // runs recursively until an unused number (card) is found

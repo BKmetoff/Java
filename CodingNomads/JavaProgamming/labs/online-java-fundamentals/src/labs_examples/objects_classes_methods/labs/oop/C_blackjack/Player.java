@@ -9,6 +9,9 @@ public class Player {
         this.name = name;
     }
 
+    public boolean computerAI () {
+        return hand.getScoreOfHand() < 16;
+    }
 
 
     @Override

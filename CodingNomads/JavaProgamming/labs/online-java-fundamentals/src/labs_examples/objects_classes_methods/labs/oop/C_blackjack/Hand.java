@@ -12,7 +12,7 @@ public class Hand {
             cards.add(card);
         }
 
-
+        System.out.println("Bust! Player's score is " + scoreOfHand);
     }
 
     public int getScoreOfHand () {
