@@ -1,25 +1,29 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 
 public class Player {
-    String name;
+    private String name;
+    private int potValue;  //(the amount of money they have)
     Hand hand = new Hand();
-    int potValue;  //(the amount of money they have)
 
+    public Player(){}
     public Player(String name){
         this.name = name;
     }
 
-    public boolean computerAI () {
+    // computerAI method from instructions
+    public boolean wantsAnotherCard () {
         return hand.getScoreOfHand() < 16;
     }
 
+    public String getName() {
+        return name;
+    }
 
-    @Override
-    public String toString() {
-        return "Player{" +
-                "name='" + name + '\'' +
-                ", hand=" + hand +
-                ", potValue=" + potValue +
-                '}';
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Hand getHand() {
+        return hand;
     }
 }

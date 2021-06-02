@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 
+import java.util.Arrays;
+
 public class Card {
     private char[] suits = new char[]{'♠', '♦', '♥', '♣'};
     private String[] faces = {"Ace", "King", "Queen", "Jack"};
@@ -31,13 +33,11 @@ public class Card {
         return this.numericValue;
     }
 
+    public String printCard (){
+        String faceOrNumeric = Arrays.asList(faces).contains(cardFace)
+                ? cardFace
+                : String.valueOf(numericValue);
 
-    @Override
-    public String toString() {
-        return "Card{" +
-                "cardSuit=" + cardSuit +
-                ", cardFace='" + cardFace + '\'' +
-                ", numericValue=" + numericValue +
-                '}';
+        return faceOrNumeric + " of " + cardSuit;
     }
 }

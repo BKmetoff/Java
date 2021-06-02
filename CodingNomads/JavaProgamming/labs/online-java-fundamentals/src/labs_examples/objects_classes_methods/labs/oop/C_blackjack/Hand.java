@@ -6,26 +6,16 @@ public class Hand {
     private ArrayList<Card> cards = new ArrayList<>();
     private int scoreOfHand;
 
-    public void addCardToHand (Card card) {
-        if ( !isOver21(card.getNumericValue()) ) {
-            updateScoreOfHand(card);
-            cards.add(card);
-        }
-
-        System.out.println("Bust! Player's score is " + scoreOfHand);
+    public void addCardToHand(Card card) {
+        updateScoreOfHand(card);
+        cards.add(card);
     }
 
-    public int getScoreOfHand () {
+    public int getScoreOfHand() {
         return scoreOfHand;
     }
 
-    private void updateScoreOfHand (Card newCard) {
+    private void updateScoreOfHand(Card newCard) {
         scoreOfHand += newCard.getNumericValue();
     }
-
-
-    private boolean isOver21 (int newCardValue) {
-        return (scoreOfHand + newCardValue) > 21;
-    }
-
 }
