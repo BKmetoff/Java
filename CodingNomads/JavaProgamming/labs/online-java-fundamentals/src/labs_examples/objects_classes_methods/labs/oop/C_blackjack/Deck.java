@@ -9,7 +9,7 @@ public class Deck {
 
     public Deck () {
         // for each suit
-        for (int cardSuit = 0; cardSuit < 4; cardSuit++) {
+        for (CardSuit cardSuit : CardSuit.values()) {
 
             // create numeric cards
             for (int numericValue = 2; numericValue <= 10; numericValue++) {
@@ -21,16 +21,10 @@ public class Deck {
             }
 
             // create face cards
-            for (int cardFace = 0; cardFace < 4; cardFace++) {
+            for (CardFace cardFace: CardFace.values()) {
                 Card faceCard = new Card();
                 faceCard.setCardSuit(cardSuit);
                 faceCard.setCardFace(cardFace);
-
-                if (faceCard.getCardFace().equals("Ace")) {
-                    faceCard.setNumericValue(1);
-                } else {
-                    faceCard.setNumericValue(10);
-                }
 
                 deckOfCards.add(faceCard);
             }

@@ -1,6 +1,5 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 
-import javax.crypto.spec.PSource;
 import java.util.Scanner;
 
 public class BlackjackController {
@@ -89,7 +88,7 @@ public class BlackjackController {
 
         Card cardForPlayerHand = deck.addCardToUserHand(randomNumber);
 
-        System.out.println(cardForPlayerHand.printCard());
+        System.out.println(cardForPlayerHand);
         player.hand.addCardToHand(cardForPlayerHand);
     }
 
@@ -147,7 +146,7 @@ public class BlackjackController {
 
     private static int randomNumber () {
         int min = 1;
-        int max = 52;
+        int max = 51;
 
         // the internet is undefeated
         return (int)Math.floor(Math.random() * (max - min + 1) + min);
