@@ -1,43 +1,24 @@
 package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 
-import java.util.Arrays;
-
 public class Card {
-    private char[] suits = new char[]{'♠', '♦', '♥', '♣'};
-    private String[] faces = {"Ace", "King", "Queen", "Jack"};
 
-    private char cardSuit;
-    private String cardFace;
-    private int numericValue;
-
+    private CardSuit cardSuit;
+    private CardContent content;
 
     public Card(){}
 
-    public void setCardSuit(int suitValue) {
-        this.cardSuit = suits[suitValue];
-    }
+    public void setCardSuit(CardSuit cardSuit) { this.cardSuit = cardSuit; }
 
-    public void setCardFace(int faceValue) {
-        this.cardFace = faces[faceValue];
-    }
-
-    public String getCardFace() {
-        return cardFace;
-    }
+    public void setCardFace(CardFace faceValue) { this.content = new CardContent(faceValue); }
 
     public void setNumericValue(int numericValue) {
-        this.numericValue = numericValue;
+        this.content = new CardContent(numericValue);
     }
 
-    public int getNumericValue() {
-        return this.numericValue;
-    }
+    public int getNumericValue() { return this.content.getValue(); }
 
-    public String printCard (){
-        String faceOrNumeric = Arrays.asList(faces).contains(cardFace)
-                ? cardFace
-                : String.valueOf(numericValue);
-
-        return faceOrNumeric + " of " + cardSuit;
+    @Override
+    public String toString (){
+        return content + " of " + cardSuit;
     }
 }
