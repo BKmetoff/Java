@@ -6,6 +6,7 @@ public class Deck {
 //    private ArrayList<Integer> cards = new ArrayList<>();
     private ArrayList<Card> deckOfCards = new ArrayList<>();
     private ArrayList<Integer> usedCards = new ArrayList<>();
+    private static int totalUsedCards;
 
     public Deck () {
         // for each suit
@@ -41,5 +42,8 @@ public class Deck {
         return deckOfCards.get(cardPosition);
     }
 
-
+    // for exercise purposes
+    public void countUsedCards () {
+        totalUsedCards++;
+    }
 }

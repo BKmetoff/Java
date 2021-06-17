@@ -86,6 +86,8 @@ public class BlackjackController {
         // ensure the same card won't be drawn again
         deck.addToUsedCards(randomNumber);
 
+        deck.countUsedCards();
+
         Card cardForPlayerHand = deck.addCardToUserHand(randomNumber);
 
         System.out.println(cardForPlayerHand);

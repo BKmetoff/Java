@@ -2,7 +2,6 @@ package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 
 public class Player {
     private String name;
-    private int potValue;  //(the amount of money they have)
     Hand hand = new Hand();
 
     public Player(){}
