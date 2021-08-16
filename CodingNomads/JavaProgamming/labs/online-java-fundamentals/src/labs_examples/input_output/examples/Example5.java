@@ -19,7 +19,7 @@ class CopyFile {
     {
         int i;
 
-        String fileReadPath = "src/labs_examples/input_output/files/char_data.txt";
+        String fileReadPath = "zsrc/labs_examples/input_output/files/char_data.txt";
         String fileWritePath = "src/labs_examples/input_output/files/char_data_rewrite.txt";
 
         FileInputStream fin = null;
