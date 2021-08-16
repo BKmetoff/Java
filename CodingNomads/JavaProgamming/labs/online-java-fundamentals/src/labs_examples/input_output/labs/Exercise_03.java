@@ -1,6 +1,6 @@
 package labs_examples.input_output.labs;
 
-/**
+/*
  * Input/Output Exercise 3: variety
  *
  *    1) Demonstrate the usage of at least two additional Byte Streams
